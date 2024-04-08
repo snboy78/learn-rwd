@@ -1,1 +1,21 @@
-<!-- picture 요소 -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>picture 요소</title>
+      <link rel="stylesheet" href="../common/reset.css">
+      <link rel="stylesheet" href="./picture.css">
+</head>
+<body>
+      <div class="container">
+            <figure class="picture">
+                  <picture>
+                        <source srcset="images/banner-narrow.jpg 375w, images/banner-narrow@2x.jpg 750w" media="(max-width: 768px)" >
+                        <source srcset="images/banner-wide.jpg 768w, images/banner-wide@2x.jpg 1536w" media="(max-width: 1000px)" >
+                        <img src="images/image-src.png" alt="">
+                  </picture>
+            </figure>
+      </div>
+</body>
+</html>

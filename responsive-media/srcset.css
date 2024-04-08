@@ -1,1 +1,9 @@
 /* srcset 속성 */
+.container{
+      width: 50%;
+      border: 10px solid red;
+}
+
+img {
+      max-width: 100%;
+}
