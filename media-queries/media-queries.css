@@ -1,1 +1,35 @@
 /* 미디어 쿼리 */
+body{
+      background: yellow ;
+}
+
+@media (prefers-color-scheme: dark) {
+      body{
+            background:  darkblue;
+            color: white;
+      }
+    }
+
+@media screen and (min-width: 320px) and (max-width: 600px)  {
+      body {
+            background: pink;
+      }
+    }
+
+@media screen and (min-width: 320px) and (max-width: 600px) and (prefers-color-scheme: dark) {
+      body {
+            background: purple;
+            color: silver ;
+      }
+    }
+
+@media screen and (min-width: 601px) and (max-width: 1024px)  {
+      body {
+            background: skyblue;
+      }
+    }
+ @media screen and (min-width: after 1025px)  {
+      body {
+            background: lime;
+      }
+    }        
