@@ -1,1 +1,30 @@
-/* 종횡비 : aspect-raio */
+.sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .iframe {
+      width: 50%;
+      border: 10px solid green;
+     
+    }
+    
+    .iframe iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+    }

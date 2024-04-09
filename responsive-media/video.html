@@ -1,1 +1,25 @@
-<!-- 반응형 video -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>video 요소</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="video.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <figure class="video">
+        <video poster="video/poster.jpg" controls>
+          <source src="video/stories.mp4" type="video/mp4" />
+          <track src="video/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+        </video>
+        <figcaption class="sr-only">구글 개발자 이야기</figcaption>
+      </figure>
+
+    </div>
+  </body>
+
+</html>

@@ -1,1 +1,36 @@
-/* 반응형 iframe */
+.sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    .container {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .iframe {
+      width: 100%;
+      position: relative;
+      border: 10px solid green;
+      padding-top: 56.25%;
+      /* height: auto;
+      aspect-ratio: 16/9; */
+    }
+    
+    .iframe iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
