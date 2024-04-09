@@ -1,1 +1,16 @@
-/* 컨테이터 쿼리 */
+.post {
+      container-type: inline-size;
+      background-color: yellow;
+      width: 70%;
+    }
+.card h2 {
+      font-size: 1em;
+      color: blue;
+    }
+    
+@container (min-width: 600px) {
+      .card h2 {
+      font-size: 48px;
+      color: red;
+      }
+    }
