@@ -1,3 +1,23 @@
+@import url(./grid.css);
+@import url(./normalize.css);
+@import url(./a11y.css);
+
+:root{
+  --yellow: yellow;
+  --pink: pink;
+
+}
+
 body{
-      font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    }
+  background: var(--pink);
+}
+body{
+  font-size: clamp(10px, 3vw, 18px);
+}
+/* html{
+  font-size: 10px;
+}
+
+body{
+  font-size: 2rem;
+} */
