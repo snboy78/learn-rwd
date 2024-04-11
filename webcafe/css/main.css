@@ -1,23 +1,84 @@
 @import url(./grid.css);
 @import url(./normalize.css);
 @import url(./a11y.css);
+@import url(./theme.css);
+@import url(./base.css);
 
-:root{
-  --yellow: yellow;
-  --pink: pink;
-
+/* 웹카페 반응형 스타일 */
+/* 공통 스타일 */
+body {
+  font-size: var(--text-sm);
 }
 
-body{
-  background: var(--pink);
-}
-body{
-  font-size: clamp(10px, 3vw, 18px);
-}
-/* html{
-  font-size: 10px;
+/* 공통 아이콘 */
+.far {
+  margin-right: var(--spacing-xs);
 }
 
-body{
-  font-size: 2rem;
-} */
+/* 공통 헤더 */
+.appHeader {
+  position: relative;
+  padding: var(--spacing-base) var(--spacing-lg);
+}
+
+/* 공통 로고 */
+.logo {
+  width: 12.75rem;
+  /* 204px */
+  height: 3.75rem;
+  /* 60px */
+}
+
+.logo__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(./../images/webcafe-logo.png) no-repeat 0 0 / 100%;
+}
+
+/* 모바일 디바이스 */
+@media (min-width: 320px) and (max-width: 767px) {
+  .appHeader{
+    background: var(--primary-color);
+    color: var(--white);
+  }
+}
+
+/* 데스크탑 디바이스 */
+@media (min-width: 768px) {
+ .appHeader, .appMain{
+    margin: 0 auto;
+    max-width: var(--container-width);
+  }
+
+  .appMain{
+    background: pink;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "news news news news news news news news news news news news"
+                         "book book book book book twitter twitter twitter twitter favorite favorite favorite"
+                         "book book book book book board board board board board board board";
+    gap: var(--spacing-lg);
+  }
+
+  .book{
+    grid-area: book;
+    background: yellow;
+  }
+  .news{
+    grid-area: news;
+    background: lime;
+  }
+  .board{
+    grid-area: board;
+    background: skyblue;
+  }
+  .favorite{
+    grid-area: favorite;
+    background: salmon;
+  }
+  .twitter{
+    grid-area: twitter;
+    background: teal;
+  }
+}
